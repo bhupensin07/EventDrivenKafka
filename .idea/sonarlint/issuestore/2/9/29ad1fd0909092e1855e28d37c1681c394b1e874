@@ -1,0 +1,5 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(“€½”8ÛƒõÆÌ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ñ±Íýÿÿÿÿ8íí—ËÌ1
+D
+java:S1068"'Remove this unused "log" private field.(Ïóóž8ïí—ËÌ1

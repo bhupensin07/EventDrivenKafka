@@ -1,0 +1,19 @@
+----start zookeeper server---
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+----Start Kafka server----
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+----Create topic command--
+.\bin\windows\kafka-topics.bat --create --topic topic-example --bootstrap-server localhost:9092
+
+----Publish event to kafka---
+.\bin\windows\kafka-console-producer.bat --topic topic-example --bootstrap-server localhost:9092
+
+----Consume event from kafka---
+.\bin\windows\kafka-console-consumer.bat --topic topic-example --from-beginning --bootstrap-server localhost:9092
+
+
+----Delete topic from kafka------
+
+.\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic order-topics

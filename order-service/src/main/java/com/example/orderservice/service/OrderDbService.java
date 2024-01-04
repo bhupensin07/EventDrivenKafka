@@ -7,11 +7,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class OrderDbService {
-    private OrderRepository orderRepository;
     @Autowired
-    public OrderDbService(OrderRepository orderRepository) {
-        this.orderRepository = orderRepository;
-    }
+    private OrderRepository orderRepository;
 
     public String saveOrder(RequestOrder order){
         return orderRepository.save(order).getOrderId();
